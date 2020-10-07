@@ -26,7 +26,7 @@ class App extends React.Component {
   }
 
   getGameData(){
-    axios.get('http://localhost:3000/moist-air/game')
+    axios.get('/moist-air/game')
     .then((res)=>{
       this.setState({
         currentGame: res.data[0]
